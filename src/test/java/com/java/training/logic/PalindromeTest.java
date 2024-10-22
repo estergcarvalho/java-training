@@ -10,7 +10,7 @@ class PalindromeTest {
 
     @Test
     @DisplayName("It must be a palindrome word")
-    public void isPalindrome() {
+    void isPalindrome() {
         Palindrome palindrome = new Palindrome();
         String word = "Renner";
 
@@ -21,7 +21,7 @@ class PalindromeTest {
 
     @Test
     @DisplayName("Not it must be a palindrome word")
-    public void notIsPalindrome() {
+    void notIsPalindrome() {
         Palindrome palindrome = new Palindrome();
         String word = "Hello";
 

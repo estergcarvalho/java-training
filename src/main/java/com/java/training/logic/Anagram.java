@@ -2,27 +2,26 @@ package com.java.training.logic;
 
 public class Anagram {
 
-    public boolean validateAnagram(String word, String wordAnagram) {
-        String[] letterWord = word.split("");
-        String[] letterAnagram = wordAnagram.split("");
+    public boolean isAnagram(String word, String anagram) {
+        String[] wordLetters = word.split("");
+        String[] anagramLetters = anagram.split("");
 
-        for (String p : letterWord) {
-            for (int l = 0; l < letterAnagram.length; l++) {
-                if (p.equals(letterAnagram[l])) {
-                    letterAnagram[l] = null;
+        for (String letter : wordLetters) {
+            for (int i = 0; i < anagramLetters.length; i++) {
+                if (letter.equals(anagramLetters[i])) {
+                    anagramLetters[i] = null;
                     break;
                 }
             }
         }
 
-        for (String letter : letterAnagram) {
+        for (String letter : anagramLetters) {
             if (letter != null) {
                 return false;
-
             }
         }
 
         return true;
     }
-
+    
 }
