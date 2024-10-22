@@ -10,7 +10,7 @@ class AnagramTest {
 
     @Test
     @DisplayName("It much be a anagram")
-     void isAnagram() {
+    void isAnagram() {
         Anagram anagram = new Anagram();
         String word = "amor";
         String word2 = "roma";
@@ -22,7 +22,7 @@ class AnagramTest {
 
     @Test
     @DisplayName("Not it much be a anagram")
-     void notIsAnagram() {
+    void notIsAnagram() {
         Anagram anagram = new Anagram();
         String word = "buti";
         String word2 = "amor";
