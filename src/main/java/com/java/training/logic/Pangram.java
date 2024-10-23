@@ -15,6 +15,10 @@ public class Pangram {
                     break;
                 }
             }
+
+            if (!isPangram) {
+                break;
+            }
         }
 
         return isPangram;

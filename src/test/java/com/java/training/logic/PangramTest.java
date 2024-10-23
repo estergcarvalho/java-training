@@ -25,7 +25,7 @@ public class PangramTest {
     void isNotPangram() {
         Pangram pangram = new Pangram();
 
-        String frase = "Abacaxi é uma delicia";
+        String frase = "O dia esta lindo hoje";
 
         boolean result = pangram.validatePangram(frase);
 
